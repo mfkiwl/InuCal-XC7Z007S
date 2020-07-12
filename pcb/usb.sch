@@ -7,7 +7,7 @@ Sheet 7 11
 Title "InuCal"
 Date "2020-06-30"
 Rev "R0.1"
-Comp "EE300"
+Comp "Wenting Zhang"
 Comment1 "zephray@outlook.com"
 Comment2 ""
 Comment3 ""
@@ -17,6 +17,8 @@ $Comp
 L Power_Protection:USBLC6-2SC6 U600
 U 1 1 5C995C17
 P 7400 3200
+AR Path="/5C995C17" Ref="U600"  Part="1" 
+AR Path="/5D1A413B/5C995C17" Ref="U600"  Part="1" 
 F 0 "U600" H 7400 3878 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 7400 3787 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6650 3600 50  0001 C CNN
@@ -71,12 +73,12 @@ $EndComp
 $Comp
 L power:GND #PWR0291
 U 1 1 5C9961F9
-P 7400 3700
-F 0 "#PWR0291" H 7400 3450 50  0001 C CNN
-F 1 "GND" H 7405 3527 50  0000 C CNN
-F 2 "" H 7400 3700 50  0001 C CNN
-F 3 "" H 7400 3700 50  0001 C CNN
-	1    7400 3700
+P 7400 3600
+F 0 "#PWR0291" H 7400 3350 50  0001 C CNN
+F 1 "GND" H 7405 3427 50  0000 C CNN
+F 2 "" H 7400 3600 50  0001 C CNN
+F 3 "" H 7400 3600 50  0001 C CNN
+	1    7400 3600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -135,29 +137,27 @@ Wire Wire Line
 Connection ~ 8600 5200
 Wire Wire Line
 	8600 5200 8600 5100
-NoConn ~ 7400 2700
-Wire Wire Line
-	8200 4300 8000 4300
+NoConn ~ 7400 2800
 Wire Wire Line
 	7600 4600 7600 4000
 Wire Wire Line
-	7900 3100 8000 3100
+	7800 3100 7900 3100
 Wire Wire Line
-	8000 3100 8000 3300
+	7900 3100 7900 3300
 Wire Wire Line
-	7900 3300 8000 3300
-Connection ~ 8000 3300
+	7800 3300 7900 3300
+Connection ~ 7900 3300
 Wire Wire Line
-	8000 3300 8000 4300
+	7900 3300 7900 4300
 Wire Wire Line
-	6900 3100 6800 3100
+	7000 3100 6900 3100
 Wire Wire Line
-	6800 3100 6800 3300
+	6900 3100 6900 3300
 Wire Wire Line
-	6900 3300 6800 3300
-Connection ~ 6800 3300
+	7000 3300 6900 3300
+Connection ~ 6900 3300
 Wire Wire Line
-	6800 3300 6800 4200
+	6900 3300 6900 4200
 Wire Wire Line
 	6500 2900 6500 3000
 Wire Wire Line
@@ -228,21 +228,17 @@ USB_DM
 Text Label 6900 4200 0    50   ~ 0
 USB_DP
 Wire Wire Line
-	8200 4200 6800 4200
-Wire Wire Line
-	6800 4200 6700 4200
+	8200 4200 6900 4200
 Wire Wire Line
 	6700 4200 6700 4800
 Wire Wire Line
 	6700 4800 5600 4800
-Connection ~ 6800 4200
 Wire Wire Line
 	5600 4900 6800 4900
 Wire Wire Line
 	6800 4900 6800 4300
 Wire Wire Line
-	6800 4300 8000 4300
-Connection ~ 8000 4300
+	6800 4300 7900 4300
 Text GLabel 4300 3100 0    50   BiDi ~ 0
 USB0_DATA7
 Text GLabel 4300 3200 0    50   BiDi ~ 0
@@ -646,4 +642,10 @@ Connection ~ 6100 3100
 Wire Wire Line
 	6100 3100 6100 3000
 NoConn ~ 5600 3400
+Connection ~ 7900 4300
+Wire Wire Line
+	7900 4300 8200 4300
+Connection ~ 6900 4200
+Wire Wire Line
+	6700 4200 6900 4200
 $EndSCHEMATC

@@ -3,14 +3,214 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
-Title ""
+Sheet 11 11
+Title "InuCal"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "R0.1"
+Comp "Wenting Zhang"
+Comment1 "zephray@outlook.com"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L symbols:XC7Z007S-CLG400 U?
+U 6 1 5F3617BB
+P 2700 2200
+F 0 "U?" H 3244 2490 60  0000 C CNN
+F 1 "XC7Z007S-CLG400" H 3244 2384 60  0000 C CNN
+F 2 "" H 2900 2250 60  0001 L CNN
+F 3 "" H 2900 2050 60  0001 L CNN
+F 4 "xc7z007sclg400" H 2900 1950 60  0001 L CNN "desc"
+	6    2700 2200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3000 3500 2    50   Input ~ 0
+USB0_DIR
+Text GLabel 3000 3700 2    50   Input ~ 0
+USB0_NXT
+Text GLabel 3000 3900 2    50   BiDi ~ 0
+USB0_DATA1
+Text GLabel 3000 3800 2    50   BiDi ~ 0
+USB0_DATA0
+Text GLabel 3000 4000 2    50   BiDi ~ 0
+USB0_DATA2
+Text GLabel 3000 4100 2    50   BiDi ~ 0
+USB0_DATA3
+Text GLabel 3000 3400 2    50   BiDi ~ 0
+USB0_DATA4
+Text GLabel 3000 4300 2    50   BiDi ~ 0
+USB0_DATA5
+Text GLabel 3000 4400 2    50   BiDi ~ 0
+USB0_DATA6
+Text GLabel 3000 4500 2    50   BiDi ~ 0
+USB0_DATA7
+Text GLabel 3000 4200 2    50   Input ~ 0
+USB0_CLKOUT
+Text GLabel 3000 4600 2    50   BiDi ~ 0
+SDIO_CLK
+Text GLabel 3000 4800 2    50   BiDi ~ 0
+SDIO_DAT0
+Text GLabel 3000 4900 2    50   BiDi ~ 0
+SDIO_DAT1
+Text GLabel 3000 5000 2    50   BiDi ~ 0
+SDIO_DAT2
+Text GLabel 3000 5100 2    50   BiDi ~ 0
+SDIO_DAT3
+Text GLabel 3000 5300 2    50   Input ~ 0
+SDIO_DET
+Text GLabel 3000 5200 2    50   Output ~ 0
+LAN_RESET
+Text GLabel 3000 4700 2    50   BiDi ~ 0
+SDIO_CMD
+Text GLabel 3000 3600 2    50   Output ~ 0
+USB0_STP
+Text Label 3400 6100 2    50   ~ 0
+PS_SRST_B
+Wire Wire Line
+	3400 6100 2700 6100
+Wire Wire Line
+	3000 3400 2700 3400
+Wire Wire Line
+	3000 3500 2700 3500
+Wire Wire Line
+	3000 3600 2700 3600
+Wire Wire Line
+	3000 3700 2700 3700
+Wire Wire Line
+	3000 3800 2700 3800
+Wire Wire Line
+	3000 3900 2700 3900
+Wire Wire Line
+	3000 4000 2700 4000
+Wire Wire Line
+	3000 4100 2700 4100
+Wire Wire Line
+	3000 4200 2700 4200
+Wire Wire Line
+	3000 4300 2700 4300
+Wire Wire Line
+	3000 4400 2700 4400
+Wire Wire Line
+	3000 4500 2700 4500
+Wire Wire Line
+	3000 4600 2700 4600
+Wire Wire Line
+	3000 4700 2700 4700
+Wire Wire Line
+	3000 4800 2700 4800
+Wire Wire Line
+	3000 4900 2700 4900
+Wire Wire Line
+	3000 5000 2700 5000
+Wire Wire Line
+	3000 5100 2700 5100
+Wire Wire Line
+	3000 5200 2700 5200
+Wire Wire Line
+	3000 5300 2700 5300
+Text GLabel 3000 5500 2    50   Input ~ 0
+PS_UART1_RX
+Text GLabel 3000 5400 2    50   Output ~ 0
+PS_UART_TX
+Wire Wire Line
+	2700 5400 3000 5400
+Wire Wire Line
+	2700 5500 3000 5500
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3B41CC
+P 2800 6200
+F 0 "#PWR?" H 2800 6050 50  0001 C CNN
+F 1 "+3V3" V 2815 6328 50  0000 L CNN
+F 2 "" H 2800 6200 50  0001 C CNN
+F 3 "" H 2800 6200 50  0001 C CNN
+	1    2800 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F3B500D
+P 3700 5700
+F 0 "#PWR?" H 3700 5550 50  0001 C CNN
+F 1 "+3V3" H 3715 5873 50  0000 C CNN
+F 2 "" H 3700 5700 50  0001 C CNN
+F 3 "" H 3700 5700 50  0001 C CNN
+	1    3700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F3B6375
+P 3700 5850
+F 0 "R?" H 3770 5896 50  0000 L CNN
+F 1 "1K/1%" H 3770 5805 50  0000 L CNN
+F 2 "" V 3630 5850 50  0001 C CNN
+F 3 "~" H 3700 5850 50  0001 C CNN
+	1    3700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F3B743F
+P 3700 6150
+F 0 "R?" H 3770 6196 50  0000 L CNN
+F 1 "1K/1%" H 3770 6105 50  0000 L CNN
+F 2 "" V 3630 6150 50  0001 C CNN
+F 3 "~" H 3700 6150 50  0001 C CNN
+	1    3700 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3B7C14
+P 3700 6300
+F 0 "#PWR?" H 3700 6050 50  0001 C CNN
+F 1 "GND" H 3705 6127 50  0000 C CNN
+F 2 "" H 3700 6300 50  0001 C CNN
+F 3 "" H 3700 6300 50  0001 C CNN
+	1    3700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F3B83BD
+P 4200 5850
+F 0 "C?" H 4315 5896 50  0000 L CNN
+F 1 "10nF" H 4315 5805 50  0000 L CNN
+F 2 "" H 4238 5700 50  0001 C CNN
+F 3 "~" H 4200 5850 50  0001 C CNN
+	1    4200 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5700 3700 5700
+Connection ~ 3700 5700
+Wire Wire Line
+	4200 6000 4200 6300
+Wire Wire Line
+	4200 6300 3700 6300
+Connection ~ 3700 6300
+Wire Wire Line
+	3700 6000 2700 6000
+Connection ~ 3700 6000
+Wire Wire Line
+	2800 6200 2700 6200
+NoConn ~ 2700 2200
+NoConn ~ 2700 2300
+NoConn ~ 2700 2400
+NoConn ~ 2700 2500
+NoConn ~ 2700 2600
+NoConn ~ 2700 2700
+NoConn ~ 2700 2800
+NoConn ~ 2700 2900
+NoConn ~ 2700 3000
+NoConn ~ 2700 3100
+NoConn ~ 2700 3200
+NoConn ~ 2700 3300
+NoConn ~ 2700 5600
+NoConn ~ 2700 5700
+NoConn ~ 2700 5800
+NoConn ~ 2700 5900
+NoConn ~ -450 5000
 $EndSCHEMATC

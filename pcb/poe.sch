@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 11
-Title ""
+Title "InuCal"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "R0.1"
+Comp "Wenting Zhang"
+Comment1 "zephray@outlook.com"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -7,7 +7,7 @@ Sheet 6 11
 Title "InuCal"
 Date "2020-06-30"
 Rev "R0.1"
-Comp "EE300"
+Comp "Wenting Zhang"
 Comment1 "zephray@outlook.com"
 Comment2 ""
 Comment3 ""
